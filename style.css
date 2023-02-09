@@ -1,0 +1,87 @@
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid rgb(153, 6, 153);
+    border-bottom: 1px solid rgb(223, 213, 223);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    font-weight: 200;
+    font-family: Calibri light;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(66, 64, 64);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .active {
+    color: rgb(154, 30, 154);
+  }
+
+  body {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 200;
+    font-family: Calibri light;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: flex-end;
+    flex: 2;
+    border-right: 1px solid gray;
+  }
+
+  .right {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    flex: 5;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .img {
+    clip-path: circle(120px at 150px 150px);
+ }
+
+ progress {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(86, 139, 237);
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: rgb(86, 139, 237);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .all {
+        flex-direction: column;
+    }
+}
